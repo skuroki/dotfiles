@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'rails.vim'
+Bundle 'tpope/vim-rails'
 Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
 "Bundle 'Shougo/neocomplcache'
