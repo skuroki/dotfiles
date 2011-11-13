@@ -12,6 +12,8 @@ Bundle 'Shougo/unite.vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-surround'
 let g:surround_{char2nr("(")} = "(\r)"
+let g:surround_{char2nr("-")} = "<%- \r -%>"
+let g:surround_{char2nr("#")} = "#{\r}"
 Bundle 'skuroki/vim-statusline'
 
 filetype plugin indent on     " required!
