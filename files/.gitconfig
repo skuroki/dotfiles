@@ -1,0 +1,17 @@
+[user]
+	name = Shinsuke KUROKI
+	email = s-kuroki@aiming-inc.com
+[color]
+	ui = auto
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	df = diff
+	st = status
+	topic = "!sh -c 'git co -b $1 master' __dummy__"
+	current-branch = "!sh -c \"git branch | grep '*' | awk '{ print \\$2 }' \""
+	push-for-review = "!sh -c 'git push origin HEAD:refs/for/master/`git current-branch`'"
+	tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[core]
+	excludesfile = ~/.gitignore
