@@ -13,10 +13,11 @@
 	ad   = add
 	au   = add -u
 	br   = branch
-	ca  = commit --amend
-	cb  = checkout -b
+	ca   = commit --amend
+	cb   = checkout -b
 	ci   = commit
-	cm  = checkout master
+	cim  = commit -m
+	cm   = checkout master
 	co   = checkout
 	df   = diff
 	ds   = diff --staged
