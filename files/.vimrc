@@ -15,6 +15,7 @@ let g:surround_{char2nr("(")} = "(\r)"
 let g:surround_{char2nr("-")} = "<%- \r -%>"
 let g:surround_{char2nr("#")} = "#{\r}"
 Bundle 'skuroki/vim-statusline'
+Bundle 'YankRing.vim'
 
 filetype plugin indent on     " required!
 
