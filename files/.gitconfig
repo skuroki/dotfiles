@@ -9,7 +9,9 @@
 	status      = auto
 	ui          = auto
 [alias]
+	ac   = add .
 	ad   = add
+	au   = add -u
 	br   = branch
 	ca  = commit --amend
 	cb  = checkout -b
