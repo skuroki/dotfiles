@@ -58,6 +58,7 @@
 
 	# for gerrit
 	current-branch = describe --all --contains HEAD
-	pfr = "!sh -c 'git push origin HEAD:refs/for/master/`git current-branch`'"
+	pfr  = "!sh -c 'git push origin HEAD:refs/for/master/`git current-branch`'"
+	pfrb = "!sh -c 'git push origin HEAD:refs/for/`git current-branch`'"
 [core]
 	excludesfile = ~/.gitignore
