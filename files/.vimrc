@@ -16,6 +16,9 @@ let g:surround_{char2nr("-")} = "<%- \r -%>"
 let g:surround_{char2nr("#")} = "#{\r}"
 Bundle 'skuroki/vim-statusline'
 Bundle 'YankRing.vim'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'ZenCoding.vim'
+let g:user_zen_settings = { 'indentation' : '  ' }
 
 filetype plugin indent on     " required!
 
