@@ -1,0 +1,10 @@
+alias g='git'
+alias gcm='git checkout master'
+alias gst='git status'
+alias r='rails'
+alias rs='rake spec'
+alias rsc='rake spec:controllers'
+alias rsm='rake spec:models'
+alias rsv='rake spec:views'
+alias ggg='git stash && git pull && git stash pop'
+
