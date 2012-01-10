@@ -1,0 +1,21 @@
+def run(cmd)
+  puts(cmd)
+  system(cmd)
+  puts 'Finished. ' + Time.now.to_s
+end
+
+def run_single_spec (*spec)
+  spec = spec.join(' ')
+  run "rspec -bX #{spec}"
+end
+# --------------------------------------------------
+# Watchr Rules
+# --------------------------------------------------
+watch( '^spec/requests/.*_spec\.rb'                        ) { |m| run_single_spec(m[0]) }
+watch( '^spec/.*_spec\.rb'                        ) { |m| run_single_spec(m[0]) }
+watch( '^app/(.*)\.rb'                            ) { |m| run_single_spec("spec/%s_spec.rb" % m[1]) }
+watch( '^app/controllers/(.*)_controller\.rb' ) { |m|
+  run_single_spec("spec/controllers/%s_controller_spec.rb" % m[1], "spec/requests/%s_spec.rb" % m[1])
+}
+watch( '^app/views/(.*)\.erb'                    ) { |m| run_single_spec("spec/views/%s.erb_spec.rb" % m[1]) }
+
