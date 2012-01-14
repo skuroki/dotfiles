@@ -19,6 +19,7 @@ Bundle 'YankRing.vim'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'ZenCoding.vim'
 let g:user_zen_settings = { 'indentation' : '  ' }
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on     " required!
 
