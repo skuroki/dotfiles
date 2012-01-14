@@ -13,6 +13,10 @@ def run_single_spec (*spec)
   spec = spec.join(' ')
   run "rspec -bX #{spec}"
 end
+
+def run_jhw
+  run "jasmine-headless-webkit"
+end
 # --------------------------------------------------
 # Watchr Rules
 # --------------------------------------------------
@@ -23,4 +27,5 @@ watch( '^app/controllers/(.*)_controller\.rb' ) { |m|
   run_single_spec("spec/controllers/%s_controller_spec.rb" % m[1], "spec/requests/%s_spec.rb" % m[1])
 }
 watch( '^app/views/(.*)\.erb'                    ) { |m| run_single_spec("spec/views/%s.erb_spec.rb" % m[1]) }
+watch( '^(.*)\.coffee'                           ) { run_jhw }
 
