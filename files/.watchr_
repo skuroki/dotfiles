@@ -1,7 +1,12 @@
+def notify(text)
+  system "notify-send \"#{text}\""
+end
+
 def run(cmd)
   puts(cmd)
-  system(cmd)
+  result = system(cmd)
   puts 'Finished. ' + Time.now.to_s
+  notify(cmd + (result ? ' OK' : ' FAILED'))
 end
 
 def run_single_spec (*spec)
