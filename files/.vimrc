@@ -14,6 +14,7 @@ Bundle 'tpope/vim-surround'
 let g:surround_{char2nr("(")} = "(\r)"
 let g:surround_{char2nr("-")} = "<%- \r -%>"
 let g:surround_{char2nr("#")} = "#{\r}"
+let g:surround_{char2nr("d")} = "do\n\r\nend"
 Bundle 'skuroki/vim-statusline'
 Bundle 'YankRing.vim'
 Bundle 'cakebaker/scss-syntax.vim'
