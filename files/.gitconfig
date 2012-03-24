@@ -72,3 +72,5 @@
 		    ' __dummy__"
 [core]
 	excludesfile = ~/.gitignore
+[merge]
+	tool = vimdiff
