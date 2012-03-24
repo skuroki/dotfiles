@@ -29,6 +29,8 @@
 	rba  = rebase --abort
 	rbc  = rebase --continue
 	rbm  = rebase master
+	ri   = rebase -i
+	rim  = rebase -i master
 	ri5  = rebase -i HEAD~5
 	ri10 = rebase -i HEAD~10
 	ref  = reflog
@@ -60,5 +62,13 @@
 	current-branch = describe --all --contains HEAD
 	pfr  = "!sh -c 'git push origin HEAD:refs/for/master/`git current-branch`'"
 	pfrb = "!sh -c 'git push origin HEAD:refs/for/`git current-branch`'"
+	ffr = "!sh -c ' \
+		      change=$1; \
+		      if [ -z \"$change\" ]; then exit 1; fi; \
+		      patchset=${2:-1}; \
+		      val=`expr $change % 100`; \
+		      dir=`printf '%02d' $val` ; \
+		      git fetch origin refs/changes/$dir/$change/$patchset && git checkout FETCH_HEAD -b $change-$patchset; \
+		    ' __dummy__"
 [core]
 	excludesfile = ~/.gitignore
