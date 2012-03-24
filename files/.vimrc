@@ -38,3 +38,5 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+let maplocalleader = ','
+nmap <LocalLeader>s :execute "!bundle exec rspec -bXc -f d -l ".line('.')." %"<CR>
