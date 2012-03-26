@@ -70,6 +70,7 @@
 		      dir=`printf '%02d' $val` ; \
 		      git fetch origin refs/changes/$dir/$change/$patchset && git checkout FETCH_HEAD -b $change-$patchset; \
 		    ' __dummy__"
+	rrb = "!git branch|egrep \"[0-9]+-[0-9]+\"|xargs git branch -D"
 [core]
 	excludesfile = ~/.gitignore
 [merge]
