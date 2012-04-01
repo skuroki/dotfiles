@@ -43,3 +43,4 @@ let maplocalleader = ','
 nmap <LocalLeader>s :execute "!bundle exec rspec -bXc -f d -l ".line('.')." %"<CR>
 nmap <LocalLeader>b :!git blame %<CR>
 nmap <LocalLeader>l :!git log %<CR>
+nmap <LocalLeader>r :source ~/.vimrc<CR>
