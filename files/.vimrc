@@ -30,7 +30,7 @@ set showcmd
 set number
 set cursorline
 
-" highlight trailing whiltespaces
+" highlight trailing whitespaces
 " from https://github.com/holysugar/dotfiles/blob/master/.vimrc
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
