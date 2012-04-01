@@ -10,5 +10,5 @@ alias r='rails'
 alias rs='rake spec'
 alias rsc='rake spec:controllers'
 alias rsm='rake spec:models'
+alias rsr='rake db:create && rake db:migrate && rake spec'
 alias rsv='rake spec:views'
-
