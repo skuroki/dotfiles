@@ -1,3 +1,4 @@
 *.orig
 *.watchr
 watchr.log
+*.swp
