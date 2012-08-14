@@ -44,3 +44,5 @@ nmap <LocalLeader>s :execute "!bundle exec rspec -bXc -f d -l ".line('.')." %"<C
 nmap <LocalLeader>b :!git blame %<CR>
 nmap <LocalLeader>l :!git log %<CR>
 nmap <LocalLeader>r :source ~/.vimrc<CR>
+
+autocmd FileType ruby setlocal ts=2 sw=2 expandtab
