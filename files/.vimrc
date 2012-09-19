@@ -20,6 +20,7 @@ let g:surround_{char2nr("d")} = "do\n\r\nend"
 let g:surround_{char2nr("p")} = "p(\r)"
 Bundle 'skuroki/vim-statusline'
 Bundle 'YankRing.vim'
+let g:yankring_manual_clipboard_check = 0
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'ZenCoding.vim'
 let g:user_zen_settings = { 'indentation' : '  ' }
