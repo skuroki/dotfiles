@@ -8,7 +8,8 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
 Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
-"Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplcache'
+let g:neocomplcache_enable_at_startup = 1
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-surround'
 let g:surround_{char2nr("(")} = "(\r)"
