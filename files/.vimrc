@@ -12,6 +12,7 @@ Bundle 'Shougo/neocomplcache'
 let g:neocomplcache_enable_at_startup = 1
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
 let g:surround_{char2nr("(")} = "(\r)"
 let g:surround_{char2nr("-")} = "<%- \r -%>"
 let g:surround_{char2nr("#")} = "#{\r}"
