@@ -11,7 +11,7 @@ end
 
 def run_single_spec (*spec)
   spec = spec.join(' ')
-  run "rspec -bX #{spec}"
+  run "bundle exec rspec -bcX -f d #{spec}"
 end
 
 def run_jhw
