@@ -1,0 +1,1 @@
+git blame $1|grep "\s$2)"|awk -F" " '{print "git show " $1}'|sh
