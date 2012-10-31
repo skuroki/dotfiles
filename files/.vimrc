@@ -10,6 +10,7 @@ Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neocomplcache'
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_underbar_completion = 1
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
