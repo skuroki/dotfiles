@@ -33,6 +33,7 @@ set incsearch
 set showcmd
 set number
 set cursorline
+set wildmode=list:longest
 
 " highlight trailing whitespaces
 " from https://github.com/holysugar/dotfiles/blob/master/.vimrc
