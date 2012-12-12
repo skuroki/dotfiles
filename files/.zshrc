@@ -10,7 +10,7 @@ setopt histignorealldups sharehistory
 bindkey -e
 
 HISTSIZE=10000000
-SAVEHIST=$SAVEHIST
+SAVEHIST=$HISTSIZE
 HISTFILE=~/.zsh_history
 
 # Use modern completion system
