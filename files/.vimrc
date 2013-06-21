@@ -54,3 +54,5 @@ nmap <LocalLeader>r :source ~/.vimrc<CR>
 onoremap _ t_
 
 autocmd FileType ruby setlocal ts=2 sw=2 expandtab
+
+autocmd QuickFixCmdPost *grep* cwindow
