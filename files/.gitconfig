@@ -70,6 +70,10 @@
 		      git fetch origin refs/changes/$dir/$change/$patchset && git checkout FETCH_HEAD -b review/$change-$patchset; \
 		    ' __dummy__"
 	rrb = "!git branch|egrep \"[0-9]+-[0-9]+\"|xargs git branch -D"
+
+	# for github
+	ppr  = "!sh -c 'git push origin `git current-branch`'"
+	pprf = "!sh -c 'git push origin -f `git current-branch`'"
 [core]
 	excludesfile = ~/.gitignore
 [merge]
