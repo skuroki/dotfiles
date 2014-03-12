@@ -36,6 +36,7 @@ set showcmd
 set number
 set cursorline
 set wildmode=list:longest
+set fileformats=unix,dos,mac
 
 " highlight trailing whitespaces
 " from https://github.com/holysugar/dotfiles/blob/master/.vimrc
