@@ -28,6 +28,7 @@ let g:user_emmet_settings = {
     \  'indentation' : '  ',
     \}
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'thinca/vim-threes'
 
 filetype plugin indent on     " required!
 
