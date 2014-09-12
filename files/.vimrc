@@ -6,6 +6,21 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
+let g:rails_projections = {
+			\   "app/admin/*.rb": {
+			\     "command": "admin",
+			\     "alternate": [
+			\       "spec/features/admin/%i_spec.rb",
+			\       "spec/features/admin/%p_spec.rb"
+			\     ]
+			\   },
+			\   "spec/features/admin/*_spec.rb": {
+			\     "alternate": [
+			\       "app/admin/%i.rb",
+			\       "app/admin/%p.rb",
+			\     ]
+			\   }
+			\ }
 Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neocomplcache'
