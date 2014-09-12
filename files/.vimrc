@@ -64,3 +64,5 @@ autocmd FileType ruby setlocal ts=2 sw=2 expandtab
 autocmd QuickFixCmdPost *grep* cwindow
 
 autocmd BufRead,BufNewFile *.arb setfiletype ruby
+
+syntax enable
