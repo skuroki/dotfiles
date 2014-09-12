@@ -19,6 +19,9 @@ let g:rails_projections = {
 			\       "app/admin/%i.rb",
 			\       "app/admin/%p.rb",
 			\     ]
+			\   },
+			\   "spec/factories/*.rb": {
+			\     "command": "factory"
 			\   }
 			\ }
 Bundle 'quickrun.vim'
