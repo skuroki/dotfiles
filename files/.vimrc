@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-" Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neocomplcache'
@@ -30,7 +30,6 @@ let g:user_emmet_settings = {
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-threes'
 Bundle 'rking/ag.vim'
-Bundle 'tpope/vim-projectionist'
 
 filetype plugin indent on     " required!
 
