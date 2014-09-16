@@ -49,6 +49,9 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-threes'
 Bundle 'rking/ag.vim'
 Bundle 'itchyny/lightline.vim'
+if !has('gui_running')
+  set t_Co=256
+endif
 
 filetype plugin indent on     " required!
 
