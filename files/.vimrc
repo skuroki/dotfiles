@@ -77,6 +77,7 @@ nmap <LocalLeader>y :execute "!~/dotfiles/files/gitwhy % ".line('.')<CR>
 nmap <LocalLeader>b :!git blame %<CR>
 nmap <LocalLeader>l :!git log %<CR>
 nmap <LocalLeader>r :source ~/.vimrc<CR>
+nmap <LocalLeader>c :!cat %<CR>
 
 onoremap _ t_
 
