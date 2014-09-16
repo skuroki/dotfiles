@@ -48,6 +48,7 @@ let g:user_emmet_settings = {
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-threes'
 Bundle 'rking/ag.vim'
+Bundle 'itchyny/lightline.vim'
 
 filetype plugin indent on     " required!
 
