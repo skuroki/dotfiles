@@ -26,6 +26,7 @@ let g:rails_projections = {
 			\ }
 Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
+Bundle 'kmnk/vim-unite-giti'
 Bundle 'Shougo/neocomplcache'
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_underbar_completion = 1
