@@ -83,6 +83,7 @@ nnoremap <LocalLeader>b :!git blame %<CR>
 nnoremap <LocalLeader>l :!git log %<CR>
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
 nnoremap <LocalLeader>c :!cat %<CR>
+nnoremap <LocalLeader>a :Ag<CR>
 
 onoremap _ t_
 
