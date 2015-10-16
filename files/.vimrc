@@ -63,9 +63,13 @@ set wildmode=list:longest
 set fileformats=unix,dos,mac
 set laststatus=2
 
+" tab
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" encoding
+set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
 
 " highlight trailing whitespaces
 " from https://github.com/holysugar/dotfiles/blob/master/.vimrc
