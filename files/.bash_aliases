@@ -1,5 +1,6 @@
 alias b='bundle'
 alias be='bundle exec'
+alias exut='exit'
 alias g='git'
 alias gcm='git checkout master'
 alias gdf='git df'
