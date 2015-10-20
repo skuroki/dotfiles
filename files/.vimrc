@@ -23,6 +23,9 @@ let g:rails_projections = {
 			\   "spec/factories/*.rb": {
 			\     "command": "factory"
 			\   },
+			\   "test/factories/*.rb": {
+			\     "command": "factory"
+			\   },
 			\   "app/decorators/*_decorator.rb": {
 			\     "command": "decorator"
 			\   }
