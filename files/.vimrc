@@ -73,7 +73,7 @@ set tabstop=2
 set shiftwidth=2
 
 " encoding
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 
 " highlight trailing whitespaces
 " from https://github.com/holysugar/dotfiles/blob/master/.vimrc
