@@ -74,7 +74,7 @@
 	# for github
 	ppr  = "!sh -c 'git push origin `git current-branch`'"
 	pprf = "!sh -c 'git push origin -f `git current-branch`'"
-	cop  = "!sh -c 'git checkout origin/pr/$0/merge'"
+	cop  = "!sh -c 'git fetch origin refs/pull/$0/merge && git checkout FETCH_HEAD -B origin/pull/$0'"
 [core]
 	excludesfile = ~/.gitignore
 [merge]
