@@ -7,7 +7,7 @@ hardstatus string '%{= kg}[ %{G} %{g}][%= %{= kw}%?%-Lw%?%{r} (%{W}%n*%f %t%?(%u
 
 screen
 screen
-stuff "vim\012"
+stuff "vim .\012"
 
 # <% @tabs.each do |tab| %>
 # screen -t <%= tab.name %> <%= @tabs.index(tab) + 1 %>
