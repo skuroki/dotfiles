@@ -37,9 +37,9 @@
 	refa = reflog --all
 	rl   = reflog
 	rla  = reflog --all
-	sh   = show
+	s    = show
 	sl   = stash list
-	ss   = stash
+	ss   = show --stat
 	ssd  = stash drop stash@{0}
 	ssd1 = stash drop stash@{1}
 	ssd2 = stash drop stash@{2}
@@ -49,6 +49,7 @@
 	ssp2 = stash pop stash@{2}
 	ssp3 = stash pop stash@{3}
 	st   = status
+	sta  = stash
 	up   = pull --rebase
 	wc   = whatchanged
 
