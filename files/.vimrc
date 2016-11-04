@@ -56,6 +56,7 @@ Bundle 'thinca/vim-threes'
 Bundle 'rking/ag.vim'
 let g:ag_qhandler="copen 20"
 Bundle 'itchyny/lightline.vim'
+Bundle 'ngmy/vim-rubocop'
 
 filetype plugin indent on     " required!
 
