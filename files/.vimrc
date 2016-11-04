@@ -97,6 +97,7 @@ nnoremap <LocalLeader>a :Ag<CR>
 onoremap _ t_
 
 autocmd FileType ruby setlocal ts=2 sw=2 expandtab
+autocmd FileType cpp  setlocal ts=4 sw=4 expandtab
 
 autocmd QuickFixCmdPost *grep* cwindow
 
