@@ -15,6 +15,7 @@
 	br   = branch
 	ca   = commit --amend
 	cb   = checkout -b
+  chp  = cherry-pick
 	ci   = commit
 	cim  = commit -m
 	cm   = checkout origin/master
