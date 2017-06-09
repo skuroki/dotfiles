@@ -1,5 +1,7 @@
 alias b='bundle'
 alias be='bundle exec'
+alias d='docker'
+alias dc='docker-compose'
 alias exut='exit'
 alias g='git'
 alias gcm='git checkout master'
