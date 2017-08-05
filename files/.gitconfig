@@ -34,6 +34,7 @@
 	rim  = rebase -i origin/master
 	ri5  = rebase -i HEAD~5
 	ri10 = rebase -i HEAD~10
+  ro   = rebase --onto
 	ref  = reflog
 	refa = reflog --all
 	rl   = reflog
