@@ -7,3 +7,6 @@ done
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +":BundleInstall" +:qa
+mkdir -p ~/.config/nvim/
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+nvim +":BundleInstall" +:qa
