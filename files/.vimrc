@@ -67,6 +67,7 @@ set cursorline
 set wildmode=list:longest
 set fileformats=unix,dos,mac
 set laststatus=2
+set pastetoggle=<LocalLeader>p
 
 " tab
 set expandtab
