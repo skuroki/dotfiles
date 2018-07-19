@@ -57,6 +57,11 @@ Bundle 'rking/ag.vim'
 let g:ag_qhandler="copen 20"
 Bundle 'itchyny/lightline.vim'
 Bundle 'ngmy/vim-rubocop'
+Bundle 'w0rp/ale'
+let g:ale_fixers = {
+      \   'ruby': ['rubocop'],
+      \}
+highlight ALEWarning ctermbg=blue
 
 filetype plugin indent on     " required!
 
