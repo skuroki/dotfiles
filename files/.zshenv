@@ -1,8 +1,5 @@
 export EDITOR='vim'
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # lightline.vim
 export TERM=xterm-256color
 
