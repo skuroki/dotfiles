@@ -75,9 +75,9 @@ set laststatus=2
 set pastetoggle=<LocalLeader>p
 
 " tab
-set expandtab
 set tabstop=2
 set shiftwidth=2
+set expandtab
 
 " encoding
 set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
