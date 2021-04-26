@@ -99,6 +99,8 @@ nnoremap <LocalLeader>l :!git log %<CR>
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
 nnoremap <LocalLeader>c :!cat %<CR>
 nnoremap <LocalLeader>a :Ag<CR>
+nnoremap <LocalLeader>p :set paste<CR>
+nnoremap <LocalLeader>n :set nopaste<CR>
 
 onoremap _ t_
 
