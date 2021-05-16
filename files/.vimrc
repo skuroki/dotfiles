@@ -62,6 +62,7 @@ let g:ale_fixers = {
       \   'ruby': ['rubocop'],
       \}
 highlight ALEWarning ctermbg=blue
+Bundle 'leafgarland/typescript-vim'
 
 filetype plugin indent on     " required!
 
