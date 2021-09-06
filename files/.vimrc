@@ -33,9 +33,6 @@ let g:rails_projections = {
 Bundle 'quickrun.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'kmnk/vim-unite-giti'
-Bundle 'Shougo/neocomplcache'
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_underbar_completion = 1
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
@@ -63,6 +60,16 @@ let g:ale_fixers = {
       \}
 highlight ALEWarning ctermbg=blue
 Bundle 'leafgarland/typescript-vim'
+Bundle 'prabirshrestha/vim-lsp'
+Bundle 'mattn/vim-lsp-settings'
+Bundle 'prabirshrestha/asyncomplete.vim'
+Bundle 'prabirshrestha/asyncomplete-lsp.vim'
+let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_diagnostics_echo_delay = 200
+let g:lsp_diagnostics_virtual_text_enabled = 0
+let g:lsp_diagnostics_signs_enabled = 1
+let g:lsp_settings_filetype_ruby = ['solargraph', 'steep']
+Bundle 'mattn/vim-lsp-icons'
 
 filetype plugin indent on     " required!
 
