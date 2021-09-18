@@ -118,6 +118,7 @@ autocmd FileType cpp  setlocal ts=4 sw=4 expandtab
 autocmd QuickFixCmdPost *grep* cwindow
 
 autocmd BufRead,BufNewFile *.arb setfiletype ruby
+autocmd BufRead,BufNewFile Steepfile setfiletype ruby
 
 syntax enable
 
