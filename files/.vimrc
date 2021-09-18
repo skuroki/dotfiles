@@ -100,7 +100,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let maplocalleader = ','
-nnoremap <LocalLeader>s :execute "!bundle exec rspec -bXc -f d -l ".line('.')." %"<CR>
+nnoremap <LocalLeader>s :execute "!bundle exec rspec -b -f d %:".line('.')<CR>
 nnoremap <LocalLeader>y :execute "!~/dotfiles/files/gitwhy % ".line('.')<CR>
 nnoremap <LocalLeader>b :!git blame %<CR>
 nnoremap <LocalLeader>l :!git log %<CR>
