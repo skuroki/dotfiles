@@ -78,4 +78,6 @@
 [core]
 	excludesfile = ~/.gitignore
 [merge]
-	tool = vimdiff
+  tool = nvimdiff
+[mergetool "nvimdiff"]
+  cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
