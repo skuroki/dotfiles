@@ -70,6 +70,7 @@ let g:lsp_diagnostics_virtual_text_enabled = 0
 let g:lsp_diagnostics_signs_enabled = 1
 let g:lsp_settings_filetype_ruby = ['solargraph', 'steep']
 Bundle 'mattn/vim-lsp-icons'
+Bundle 'kassio/neoterm'
 
 filetype plugin indent on     " required!
 
@@ -100,12 +101,13 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let maplocalleader = ','
-nnoremap <LocalLeader>s :execute "!bundle exec rspec -b -f d %:".line('.')<CR>
-nnoremap <LocalLeader>y :execute "!~/dotfiles/files/gitwhy % ".line('.')<CR>
-nnoremap <LocalLeader>b :!git blame %<CR>
-nnoremap <LocalLeader>l :!git log %<CR>
+nnoremap <LocalLeader>s :execute "T bundle exec rspec -b -f d %:".line('.')<CR>
+nnoremap <LocalLeader>S :execute "T bundle exec rspec -b -f d %"<CR>
+nnoremap <LocalLeader>y :execute "T ~/dotfiles/files/gitwhy % ".line('.')<CR>
+nnoremap <LocalLeader>b :T git blame %<CR>
+nnoremap <LocalLeader>l :T git log %<CR>
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
-nnoremap <LocalLeader>c :!cat %<CR>
+nnoremap <LocalLeader>c :T cat %<CR>
 nnoremap <LocalLeader>a :Ag<CR>
 nnoremap <LocalLeader>p :set paste<CR>
 nnoremap <LocalLeader>n :set nopaste<CR>
