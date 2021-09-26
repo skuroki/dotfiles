@@ -69,6 +69,7 @@ let g:lsp_diagnostics_signs_enabled = 1
 let g:lsp_settings_filetype_ruby = ['solargraph', 'steep']
 Bundle 'mattn/vim-lsp-icons'
 Bundle 'kassio/neoterm'
+let g:neoterm_autoscroll = 1
 
 filetype plugin indent on     " required!
 
