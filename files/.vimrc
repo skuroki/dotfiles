@@ -103,6 +103,8 @@ autocmd BufWinLeave * call clearmatches()
 let maplocalleader = ','
 nnoremap <LocalLeader>s :execute "T bundle exec rspec -b -f d %:".line('.')<CR>
 nnoremap <LocalLeader>S :execute "T bundle exec rspec -b -f d %"<CR>
+nnoremap <LocalLeader>t :execute "T bundle exec rails test %:".line('.')<CR>
+nnoremap <LocalLeader>T :execute "T bundle exec rails test %"<CR>
 nnoremap <LocalLeader>y :execute "T ~/dotfiles/files/gitwhy % ".line('.')<CR>
 nnoremap <LocalLeader>b :T git blame %<CR>
 nnoremap <LocalLeader>l :T git log %<CR>
