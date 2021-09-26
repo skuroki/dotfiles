@@ -108,7 +108,7 @@ nnoremap <LocalLeader>b :T git blame %<CR>
 nnoremap <LocalLeader>l :T git log %<CR>
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
 nnoremap <LocalLeader>c :T cat %<CR>
-nnoremap <LocalLeader>a :execute "T ag ".expand('<cword>')<CR>
+nnoremap <LocalLeader>a :execute "T ag --noheading ".expand('<cword>')<CR>
 nnoremap <LocalLeader>p :set paste<CR>
 nnoremap <LocalLeader>n :set nopaste<CR>
 
