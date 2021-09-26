@@ -45,6 +45,8 @@ alias rsr='bundle exec rake db:create && rake db:migrate && rake spec'
 alias rsv='bundle exec rake spec:views'
 alias t='bundle exec rails test'
 
+source ~/.zprezto/init.zsh
+
 function peco-select-history() {
 	local tac
 	if which tac > /dev/null; then
@@ -60,5 +62,3 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-source ~/.zprezto/init.zsh
