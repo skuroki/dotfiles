@@ -50,8 +50,6 @@ let g:user_emmet_settings = {
     \}
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'thinca/vim-threes'
-Bundle 'rking/ag.vim'
-let g:ag_qhandler="copen 20"
 Bundle 'itchyny/lightline.vim'
 Bundle 'ngmy/vim-rubocop'
 Bundle 'w0rp/ale'
@@ -110,7 +108,7 @@ nnoremap <LocalLeader>b :T git blame %<CR>
 nnoremap <LocalLeader>l :T git log %<CR>
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
 nnoremap <LocalLeader>c :T cat %<CR>
-nnoremap <LocalLeader>a :Ag<CR>
+nnoremap <LocalLeader>a :execute "T ag ".expand('<cword>')<CR>
 nnoremap <LocalLeader>p :set paste<CR>
 nnoremap <LocalLeader>n :set nopaste<CR>
 
