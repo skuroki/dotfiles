@@ -13,6 +13,7 @@ fi
 
 source ~/.zprezto/init.zsh
 
+alias an='ag --noheading'
 alias b='bundle'
 alias be='bundle exec'
 alias by='byobu'
