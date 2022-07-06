@@ -16,6 +16,7 @@ source ~/.zprezto/init.zsh
 alias an='ag --noheading'
 alias b='bundle'
 alias be='bundle exec'
+alias bs='byobu  -S `pwd | sed -e "s/\//_/g"`' # ディレクトリのパスを元にスクリーン名をつけて別に開く
 alias by='byobu'
 alias d='docker'
 alias dc='docker-compose'
