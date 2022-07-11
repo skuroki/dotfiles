@@ -112,6 +112,7 @@ nnoremap <LocalLeader>c :T cat %<CR>
 nnoremap <LocalLeader>a :execute "T ag --noheading ".expand('<cword>')<CR>
 nnoremap <LocalLeader>p :set paste<CR>
 nnoremap <LocalLeader>n :set nopaste<CR>
+nnoremap <LocalLeader><LocalLeader> :T an 
 
 onoremap _ t_
 
