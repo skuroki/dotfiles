@@ -5,6 +5,7 @@ export TERM=xterm-256color
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+eval "$(nodenv init -)"
 
 # byobuのwindowを0はじまりにするために必要
 if [[ -n $TMUX ]] ; then
