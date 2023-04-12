@@ -110,6 +110,7 @@ nnoremap <LocalLeader>l :T git log %<CR>
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
 nnoremap <LocalLeader>c :T cat %<CR>
 nnoremap <LocalLeader>a :execute "T ag --noheading ".expand('<cword>')<CR>
+nnoremap <LocalLeader>w :execute "T ag --noheading -w ".expand('<cword>')<CR>
 nnoremap <LocalLeader>p :set paste<CR>
 nnoremap <LocalLeader>n :set nopaste<CR>
 nnoremap <LocalLeader><LocalLeader> :T an 
