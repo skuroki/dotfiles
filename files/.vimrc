@@ -70,6 +70,7 @@ let g:lsp_settings_filetype_ruby = ['solargraph', 'steep']
 Bundle 'mattn/vim-lsp-icons'
 Bundle 'kassio/neoterm'
 let g:neoterm_autoscroll = 1
+Bundle 'slim-template/vim-slim.git'
 
 filetype plugin indent on     " required!
 
@@ -100,8 +101,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let maplocalleader = ','
-nnoremap <LocalLeader>s :execute "T bundle exec rspec -f d %:".line('.')<CR>
-nnoremap <LocalLeader>S :execute "T bundle exec rspec -f d %"<CR>
+nnoremap <LocalLeader>s :w<CR>:execute "T bundle exec rspec -f d %:".line('.')<CR>
+nnoremap <LocalLeader>S :w<CR>:execute "T bundle exec rspec -f d %"<CR>
 nnoremap <LocalLeader>t :execute "T bundle exec rails test %:".line('.')<CR>
 nnoremap <LocalLeader>T :execute "T bundle exec rails test %"<CR>
 nnoremap <LocalLeader>y :execute "T ~/dotfiles/files/gitwhy % ".line('.')<CR>
