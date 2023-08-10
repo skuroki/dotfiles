@@ -108,6 +108,7 @@ nnoremap <LocalLeader>T :execute "T bundle exec rails test %"<CR>
 nnoremap <LocalLeader>y :execute "T ~/dotfiles/files/gitwhy % ".line('.')<CR>
 nnoremap <LocalLeader>b :T git blame %<CR>
 nnoremap <LocalLeader>l :T git log %<CR>
+nnoremap <LocalLeader>L :T bundle exec rubocop 
 nnoremap <LocalLeader>r :source ~/.vimrc<CR>
 nnoremap <LocalLeader>c :T cat %<CR>
 nnoremap <LocalLeader>a :execute "T ag --noheading ".expand('<cword>')<CR>
