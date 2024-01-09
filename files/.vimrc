@@ -71,6 +71,7 @@ Bundle 'mattn/vim-lsp-icons'
 Bundle 'kassio/neoterm'
 let g:neoterm_autoscroll = 1
 Bundle 'slim-template/vim-slim.git'
+Bundle 'github/copilot.vim'
 
 filetype plugin indent on     " required!
 
