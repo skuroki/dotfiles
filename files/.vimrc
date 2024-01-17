@@ -83,6 +83,7 @@ set wildmode=list:longest
 set fileformats=unix,dos,mac
 set laststatus=2
 set pastetoggle=<LocalLeader>p
+set clipboard+=unnamedplus
 
 " tab
 set tabstop=2
