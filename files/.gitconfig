@@ -1,85 +1,86 @@
 [color]
-	branch      = auto
-	diff        = auto
-	grep        = auto
-	interactive = auto
-	status      = auto
-	ui          = auto
+  branch      = auto
+  diff        = auto
+  grep        = auto
+  interactive = auto
+  status      = auto
+  ui          = auto
 [alias]
-	ac   = add .
-	ad   = add
-	au   = add -u
-	br   = branch
-	ca   = commit --amend
-	cb   = checkout -b
+  ac   = add .
+  ad   = add
+  au   = add -u
+  br   = branch
+  ca   = commit --amend
+  cb   = checkout -b
   chp  = cherry-pick
-	ci   = commit
-	cim  = commit -m
-	cm   = checkout origin/master
-	co   = checkout
-	df   = diff
-	ds   = diff --staged
-	dw   = diff --color-words
-	ft   = fetch
-	lg   = log --graph --branches --date=short --decorate --pretty=format:'%C(yellow)%h %Cgreen%ad %Cblue%cn %Creset%s %C(magenta)%d'
-	ls   = log --stat
-	lp   = log -p
-	rba  = rebase --abort
-	rbc  = rebase --continue
-	rbm  = rebase origin/master
-	ri   = rebase -i
-	rim  = rebase -i origin/master
-	ri5  = rebase -i HEAD~5
-	ri10 = rebase -i HEAD~10
+  ci   = commit
+  cim  = commit -m
+  cm   = checkout origin/master
+  co   = checkout
+  df   = diff
+  ds   = diff --staged
+  dw   = diff --color-words
+  ft   = fetch
+  lg   = log --graph --branches --date=short --decorate --pretty=format:'%C(yellow)%h %Cgreen%ad %Cblue%cn %Creset%s %C(magenta)%d'
+  ls   = log --stat
+  lp   = log -p
+  rba  = rebase --abort
+  rbc  = rebase --continue
+  rbm  = rebase origin/master
+  ri   = rebase -i
+  rim  = rebase -i origin/master
+  ri5  = rebase -i HEAD~5
+  ri10 = rebase -i HEAD~10
   ro   = rebase --onto
-	ref  = reflog
-	refa = reflog --all
-	rl   = reflog
-	rla  = reflog --all
-	s    = show
-	sl   = stash list
-	ss   = show --stat
-	ssd  = stash drop stash@{0}
-	ssd1 = stash drop stash@{1}
-	ssd2 = stash drop stash@{2}
-	ssd3 = stash drop stash@{3}
-	ssp  = stash pop
-	ssp1 = stash pop stash@{1}
-	ssp2 = stash pop stash@{2}
-	ssp3 = stash pop stash@{3}
-	st   = status
-	sta  = stash
-	up   = pull --rebase
-	wc   = whatchanged
+  ref  = reflog
+  refa = reflog --all
+  rl   = reflog
+  rla  = reflog --all
+  s    = show
+  sl   = stash list
+  ss   = show --stat
+  ssd  = stash drop stash@{0}
+  ssd1 = stash drop stash@{1}
+  ssd2 = stash drop stash@{2}
+  ssd3 = stash drop stash@{3}
+  ssp  = stash pop
+  ssp1 = stash pop stash@{1}
+  ssp2 = stash pop stash@{2}
+  ssp3 = stash pop stash@{3}
+  st   = status
+  sta  = stash
+  up   = pull --rebase
+  wc   = whatchanged
 
-	ranking = shortlog -s -n --no-merges
+  ranking = shortlog -s -n --no-merges
 
-	# see http://d.hatena.ne.jp/moro/20110719/1311048331
-	readit = tag -f 'READIT!' origin/master
-	newspaper = log -p --reverse 'READIT!'..origin/master
+  # see http://d.hatena.ne.jp/moro/20110719/1311048331
+  readit = tag -f 'READIT!' origin/master
+  newspaper = log -p --reverse 'READIT!'..origin/master
 
-	# for gerrit
-	current-branch = describe --all --contains HEAD
-	pfr  = "!sh -c 'git push origin HEAD:refs/for/`git current-branch`'"
-	ffr = "!sh -c ' \
-		      change=$1; \
-		      if [ -z \"$change\" ]; then exit 1; fi; \
-		      patchset=${2:-1}; \
-		      val=`expr $change % 100`; \
-		      dir=`printf '%02d' $val` ; \
-		      git fetch origin refs/changes/$dir/$change/$patchset && git checkout FETCH_HEAD -b review/$change-$patchset; \
-		    ' __dummy__"
-	rrb = "!git branch|egrep \"[0-9]+-[0-9]+\"|xargs git branch -D"
+  # for gerrit
+  current-branch = describe --all --contains HEAD
+  pfr  = "!sh -c 'git push origin HEAD:refs/for/`git current-branch`'"
+  ffr = "!sh -c ' \
+          change=$1; \
+          if [ -z \"$change\" ]; then exit 1; fi; \
+          patchset=${2:-1}; \
+          val=`expr $change % 100`; \
+          dir=`printf '%02d' $val` ; \
+          git fetch origin refs/changes/$dir/$change/$patchset && git checkout FETCH_HEAD -b review/$change-$patchset; \
+        ' __dummy__"
+  rrb = "!git branch|egrep \"[0-9]+-[0-9]+\"|xargs git branch -D"
 
-	# for github
-	ppr  = "!sh -c 'git push origin `git current-branch`'"
-	pprf = "!sh -c 'git push origin -f `git current-branch`'"
-	cop  = "!sh -c 'git fetch origin refs/pull/$0/merge && git checkout FETCH_HEAD -B origin/pull/$0'"
+  # for github
+  ppr  = "!sh -c 'git push origin `git current-branch`'"
+  pprf = "!sh -c 'git push origin -f `git current-branch`'"
+  cop  = "!sh -c 'git fetch origin refs/pull/$0/merge && git checkout FETCH_HEAD -B origin/pull/$0'"
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
+  pager = cat
 [merge]
   tool = nvimdiff
 [mergetool "nvimdiff"]
   cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
 [init]
-	defaultBranch = main
+  defaultBranch = main
