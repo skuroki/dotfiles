@@ -4,3 +4,5 @@ watchr.log
 *.swp
 projections.json
 .DS_Store
+.yarn*
+.node-version
