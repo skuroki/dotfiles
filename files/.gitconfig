@@ -38,7 +38,7 @@
   rla  = reflog --all
   s    = show
   sl   = stash list
-  ss   = show --stat
+  ss   = show --name-only
   ssd  = stash drop stash@{0}
   ssd1 = stash drop stash@{1}
   ssd2 = stash drop stash@{2}
