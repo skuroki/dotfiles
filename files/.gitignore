@@ -6,3 +6,4 @@ projections.json
 .DS_Store
 .yarn*
 .node-version
+result.txt

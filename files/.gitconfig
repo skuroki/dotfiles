@@ -79,8 +79,8 @@
   excludesfile = ~/.gitignore
   pager = cat
 [merge]
-  tool = nvimdiff
-[mergetool "nvimdiff"]
-  cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
+  tool = vimdiff
+# [mergetool "nvimdiff"]
+#   cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
 [init]
   defaultBranch = main

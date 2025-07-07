@@ -1,4 +1,5 @@
 export EDITOR='vim'
+export AWS_PAGER='cat'
 
 # lightline.vim
 export TERM=xterm-256color
@@ -12,7 +13,27 @@ if [[ -n $TMUX ]] ; then
   tmux movew -r ;
 fi
 
-source ~/.zprezto/init.zsh
+# Agent最適化プロンプト - 構造化された読み書きしやすい出力
+setopt PROMPT_SUBST
+
+# 構造化された出力：[pwd][git][status]>
+PROMPT='[%~]$(git_prompt_info)$(exit_code_info)> '
+
+git_prompt_info() {
+  local branch=$(git branch 2>/dev/null | grep '^*' | colrm 1 2)
+  if [[ -n $branch ]]; then
+    local git_status=$(git status --porcelain 2>/dev/null)
+    if [[ -n $git_status ]]; then
+      echo "[git:${branch}*]"
+    else
+      echo "[git:${branch}]"
+    fi
+  fi
+}
+
+exit_code_info() {
+  echo "[exit:$?]"
+}
 
 alias an='ag --noheading'
 alias b='bundle'
@@ -67,3 +88,10 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/shinsuke.kuroki/.dart-cli-completion/zsh-config.zsh ]] && . /Users/shinsuke.kuroki/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"

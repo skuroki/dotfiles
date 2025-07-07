@@ -10,5 +10,3 @@ vim +":BundleInstall" +:qa
 mkdir -p ~/.config/nvim/
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 nvim +":BundleInstall" +:qa
-
-git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
