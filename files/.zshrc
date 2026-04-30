@@ -27,8 +27,8 @@ fi
 # Agent最適化プロンプト - 構造化された読み書きしやすい出力
 setopt PROMPT_SUBST
 
-# 構造化された出力：[pwd][git][status]>
-PROMPT='[%~]$(git_prompt_info)$(exit_code_info)> '
+# 構造化された出力：[pwd][git][status][time]>
+PROMPT='[%~]$(git_prompt_info)$(exit_code_info)[time:%D{%H:%M:%S}]> '
 
 git_prompt_info() {
   local branch=$(git branch 2>/dev/null | grep '^*' | colrm 1 2)
