@@ -1,6 +1,16 @@
 export EDITOR='vim'
 export AWS_PAGER='cat'
 
+# History
+HISTFILE="${HOME}/.zsh_history"
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+
 # lightline.vim
 export TERM=xterm-256color
 
